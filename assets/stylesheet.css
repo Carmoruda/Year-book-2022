@@ -256,6 +256,7 @@ footer > p {
   transition: color 0.3 ease-out;
 }
 
+/* TODO: Cambiar color code */
 .photos:hover .code {
   color: var(--main-dark-blue);
 }
@@ -325,4 +326,21 @@ footer > p {
   .cards {
     grid-template-columns: 1fr;
   }
+}
+
+/* Valle de los caídos page*/
+.textblock {
+  color: black;
+  font-size: 18px;
+  line-height: 1.65em;
+  clear: both;
+
+  padding: 0;
+  margin: auto;
+  margin-bottom: 4rem;
+  max-width: 954px;
+
+  font: inherit;
+  vertical-align: baseline;
+  text-align: justify;
 }
