@@ -2,7 +2,7 @@
 
 :root {
   --main-white: #f0f0f0;
-  --main-orange: #f77e02;
+  --main-blue: #829dedab;
   --main-light-blue: #f2f6fb;
   --main-dark-blue: #233689;
   --main-gray: #303841;
@@ -53,7 +53,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   text-align: center;
@@ -65,6 +66,10 @@ h1 {
 
 h2 {
   font-size: 4.2rem;
+}
+
+h3 {
+  font-size: 3rem;
 }
 
 ul {
@@ -256,9 +261,8 @@ footer > p {
   transition: color 0.3 ease-out;
 }
 
-/* TODO: Cambiar color code */
 .photos:hover .code {
-  color: var(--main-dark-blue);
+  color: var(--main-blue);
 }
 
 .photos-image {
@@ -328,7 +332,7 @@ footer > p {
   }
 }
 
-/* Valle de los caídos page*/
+/*Valle de los caídos page*/
 .textblock {
   color: black;
   font-size: 18px;
@@ -343,4 +347,154 @@ footer > p {
   font: inherit;
   vertical-align: baseline;
   text-align: justify;
+}
+
+.textblock b {
+  color: #233689;
+}
+
+.class-subsection-header {
+  max-width: 397px;
+  margin: 0 auto 6rem auto;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.2rem solid var(--main-dark-blue);
+  color: var(--main-dark-blue);
+}
+
+/*School Campus*/
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  background: url("http://digital.bnint.com/filelib/s9/photos/white_wood_4500x3000_lo_res.jpg");
+}
+
+.carousel {
+  position: relative;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+  margin-top: 26px;
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+  position: static;
+  opacity: 100;
+}
+
+.carousel-item {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.carousel-control {
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+  height: 40px;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  cursor: pointer;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+}
+
+.carousel-control.prev {
+  left: 2%;
+}
+
+.carousel-control.next {
+  right: 2%;
+}
+
+.carousel-control:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+  display: block;
+}
+
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.carousel-bullet {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 35px;
+}
+
+.carousel-bullet:hover {
+  color: #aaaaaa;
+}
+
+#carousel-1:checked
+  ~ .control-1
+  ~ .carousel-indicators
+  li:nth-child(1)
+  .carousel-bullet,
+#carousel-2:checked
+  ~ .control-2
+  ~ .carousel-indicators
+  li:nth-child(2)
+  .carousel-bullet,
+#carousel-3:checked
+  ~ .control-3
+  ~ .carousel-indicators
+  li:nth-child(3)
+  .carousel-bullet {
+  color: #428bca;
+}
+
+#title {
+  width: 100%;
+  position: absolute;
+  padding: 0px;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 27px;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Open Sans", sans-serif;
+  z-index: 9999;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33),
+    -1px 0px 2px rgba(255, 255, 255, 0);
 }
