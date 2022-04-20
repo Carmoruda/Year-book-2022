@@ -363,11 +363,13 @@ footer > p {
 }
 
 /*School Campus*/
-html,
-body {
-  margin: 0px;
-  padding: 0px;
-  background: url("http://digital.bnint.com/filelib/s9/photos/white_wood_4500x3000_lo_res.jpg");
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
 }
 
 .carousel {
