@@ -1,5 +1,4 @@
 /* Basic */
-
 :root {
   --main-white: #f0f0f0;
   --main-blue: #829dedab;
@@ -41,6 +40,12 @@ html {
 @media (max-width: 28.75em) {
   html {
     font-size: 55%;
+  }
+}
+
+@media (max-width: 976px) {
+  body {
+    padding-top: 50px;
   }
 }
 
@@ -130,7 +135,6 @@ footer > p {
 }
 
 .header-title {
-  display: inline-block;
   line-height: inherit;
   white-space: nowrap;
   align-items: center;
@@ -240,15 +244,6 @@ footer > p {
   max-width: 1280px;
   margin: 0 auto;
   margin-bottom: 6rem;
-}
-
-@media (max-width: 30.625em) {
-  .photos-section {
-    padding: 6rem 1rem;
-  }
-  .photos-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .photos {
@@ -363,24 +358,17 @@ footer > p {
 }
 
 /*School Campus*/
-.welcome-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-}
-
 .carousel {
   position: relative;
-  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-  margin-top: 26px;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .carousel-inner {
   position: relative;
   overflow: hidden;
+  margin: 105px auto 20px;
+
   width: 100%;
 }
 
@@ -437,7 +425,22 @@ footer > p {
 
 #carousel-1:checked ~ .control-1,
 #carousel-2:checked ~ .control-2,
-#carousel-3:checked ~ .control-3 {
+#carousel-3:checked ~ .control-3,
+#carousel-4:checked ~ .control-4,
+#carousel-5:checked ~ .control-5,
+#carousel-6:checked ~ .control-6,
+#carousel-7:checked ~ .control-7,
+#carousel-8:checked ~ .control-8,
+#carousel-9:checked ~ .control-9,
+#carousel-10:checked ~ .control-10,
+#carousel-11:checked ~ .control-11,
+#carousel-12:checked ~ .control-12,
+#carousel-13:checked ~ .control-13,
+#carousel-14:checked ~ .control-14,
+#carousel-15:checked ~ .control-15,
+#carousel-16:checked ~ .control-16,
+#carousel-17:checked ~ .control-17,
+#carousel-18:checked ~ .control-18 {
   display: block;
 }
 
@@ -483,6 +486,81 @@ footer > p {
   ~ .control-3
   ~ .carousel-indicators
   li:nth-child(3)
+  .carousel-bullet,
+#carousel-4:checked
+  ~ .control-4
+  ~ .carousel-indicators
+  li:nth-child(4)
+  .carousel-bullet,
+#carousel-5:checked
+  ~ .control-5
+  ~ .carousel-indicators
+  li:nth-child(5)
+  .carousel-bullet,
+#carousel-6:checked
+  ~ .control-6
+  ~ .carousel-indicators
+  li:nth-child(6)
+  .carousel-bullet,
+#carousel-7:checked
+  ~ .control-7
+  ~ .carousel-indicators
+  li:nth-child(7)
+  .carousel-bullet,
+#carousel-8:checked
+  ~ .control-8
+  ~ .carousel-indicators
+  li:nth-child(8)
+  .carousel-bullet,
+#carousel-9:checked
+  ~ .control-9
+  ~ .carousel-indicators
+  li:nth-child(9)
+  .carousel-bullet,
+#carousel-10:checked
+  ~ .control-10
+  ~ .carousel-indicators
+  li:nth-child(10)
+  .carousel-bullet,
+#carousel-11:checked
+  ~ .control-11
+  ~ .carousel-indicators
+  li:nth-child(11)
+  .carousel-bullet,
+#carousel-12:checked
+  ~ .control-12
+  ~ .carousel-indicators
+  li:nth-child(12)
+  .carousel-bullet,
+#carousel-13:checked
+  ~ .control-13
+  ~ .carousel-indicators
+  li:nth-child(13)
+  .carousel-bullet,
+#carousel-14:checked
+  ~ .control-14
+  ~ .carousel-indicators
+  li:nth-child(14)
+  .carousel-bullet,
+#carousel-15:checked
+  ~ .control-15
+  ~ .carousel-indicators
+  li:nth-child(15)
+  .carousel-bullet,
+#carousel-16:checked
+  ~ .control-16
+  ~ .carousel-indicators
+  li:nth-child(16)
+  .carousel-bullet,
+#carousel-17:checked
+  ~ .control-17
+  ~ .carousel-indicators
+  li:nth-child(17)
+  .carousel-bullet,
+#carousel-18:checked
+  ~ .control-18
+  ~ .carousel-indicators
+  li:nth-child(18)
   .carousel-bullet {
   color: #428bca;
 }
