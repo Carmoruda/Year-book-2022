@@ -142,7 +142,6 @@ footer > p {
 
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
 
   font-size: 2.2rem;
   text-transform: uppercase;
@@ -166,12 +165,28 @@ footer > p {
   text-decoration: underline;
 }
 
+@media (max-width: 300px) {
+  .header-title {
+    font-size: 1.5rem;
+  }
+  .nav-list a {
+    font-size: 1.6rem;
+  }
+}
+
 @media (max-width: 28.75em) {
   .nav {
     justify-content: center;
   }
   .nav-list {
     margin: 0 1rem;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 976px) {
+  .nav {
+    justify-content: center;
+    flex-wrap: nowrap;
   }
 }
 
@@ -239,9 +254,9 @@ footer > p {
   color: var(--main-dark-blue);
 }
 
-@media (max-width: 28.75rem) {
-  .photos-section-header {
-    font-size: 4rem;
+@media (max-width: 976px) {
+  .photos-section h2 {
+    font-size: 2.75rem;
   }
 }
 
@@ -320,6 +335,15 @@ footer > p {
   padding-bottom: 1rem;
   border-bottom: 0.2rem solid var(--main-dark-blue);
   color: var(--main-dark-blue);
+}
+
+@media (min-width: 760px) and (max-width: 976px) {
+  .class-section-header {
+    padding-top: 0;
+  }
+  .photos-section {
+    padding: 8rem 2rem;
+  }
 }
 
 .cards {
@@ -409,6 +433,18 @@ footer > p {
   color: var(--main-white);
   padding: 12px;
   font-style: italic;
+}
+
+@media (max-width: 820px) {
+  .flip {
+    width: calc(100vw - 440px);
+  }
+}
+
+@media (max-width: 460px) {
+  .flip {
+    width: calc(100vw - 20px);
+  }
 }
 
 /*Valle de los caídos page*/
