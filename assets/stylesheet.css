@@ -311,10 +311,10 @@ footer > p {
   font-size: 2rem;
   background: var(--main-gray);
   transition: background 0.3s ease-out;
+  color: var(--main-white);
 }
 
 .btn-about-us > i {
-  margin-left: 10px;
   transform: translateX(0);
   transition: transform 0.3s eas;
 }
@@ -699,4 +699,71 @@ footer > p {
   z-index: 9999;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33),
     -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+/*Contact Form*/
+.contact-section {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: var(--main-white);
+}
+
+.contact-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid var(--main-dark-blue);
+  color: var(--main-dark-blue);
+}
+
+@media (max-width: 976px) {
+  .contact-section h2 {
+    font-size: 2.75rem;
+  }
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-row {
+  display: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.form-row > .col {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.form-control {
+  width: calc(100vw - 20%);
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--main-gray);
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid var(--main-blue);
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+textarea.form-control {
+  height: auto;
 }
