@@ -127,7 +127,7 @@ footer > p {
   left: 0;
   top: 0;
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   z-index: 1;
 
   background: var(--main-white);
@@ -216,6 +216,15 @@ footer > p {
   font-style: italic;
 }
 
+@media (max-width: 976px) {
+  .welcome-section h1 {
+    font-size: 2.75rem;
+  }
+  .welcome-section p {
+    font-size: 2.45rem;
+  }
+}
+
 /* Photos section */
 .photos-section {
   text-align: center;
@@ -249,6 +258,15 @@ footer > p {
 .photos {
   background: var(--main-gray);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.code {
+  color: var(--main-gray);
+  transition: color 0.3 ease-out;
+}
+
+.photos:hover .code {
+  color: var(--main-blue);
 }
 
 .photos-image {
@@ -298,7 +316,7 @@ footer > p {
 .class-section-header {
   max-width: 640px;
   margin: 0 auto 6rem auto;
-  padding-top: 3rem;
+  padding-top: 7rem;
   padding-bottom: 1rem;
   border-bottom: 0.2rem solid var(--main-dark-blue);
   color: var(--main-dark-blue);
@@ -317,7 +335,7 @@ footer > p {
 
 @media (max-width: 30.625em) {
   .photos-section {
-    padding: 10rem 1rem;
+    padding: 5rem 1rem;
   }
   .cards {
     grid-template-columns: 1fr;
@@ -367,7 +385,7 @@ footer > p {
   display: inline-block;
   margin-right: 2px;
   margin-bottom: 1em;
-  width: 400px;
+  width: 394px;
 }
 .flip > .front,
 .flip > .back {
@@ -401,6 +419,8 @@ footer > p {
   clear: both;
 
   padding: 0;
+  padding-left: 5%;
+  padding-right: 5%;
   margin: auto;
   margin-bottom: 4rem;
   max-width: 954px;
