@@ -851,6 +851,84 @@ input.form-control.form-item {
 
 div.button-row {
   text-align: center;
+  margin-top: 2rem !important;
+}
+
+/*Our memories*/
+.memories-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  padding-top: 7rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.2rem solid var(--main-dark-blue);
+  color: var(--main-dark-blue);
+}
+
+@media (max-width: 976px) {
+  .memories-section h2 {
+    font-size: 2.75rem;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 976px) {
+  .memories-section-header {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 976px) {
+  .memories-section h2 {
+    font-size: 2.75rem;
+  }
+}
+
+.memories-section {
+  padding: 8rem 2rem;
+  background: var(--main-white);
+}
+
+.memories-section form {
+  max-width: 650px;
+  padding: 20px;
+  margin: auto;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container {
+  columns: 5 250px;
+  column-gap: 3rem;
+  width: 90%;
+  margin: 0 auto;
+}
+.grid-container div {
+  width: 150px;
+  margin: 0 1.5rem 1.5rem 0;
+  display: inline-block;
+  width: 100%;
+  border: solid 2px var(--main-gray);
+  padding: 5px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+}
+.grid-container div:hover img {
+  filter: grayscale(0);
+}
+.grid-container div:hover {
+  border-color: var(--main-blue);
+}
+.grid-container div img {
+  width: 100%;
+  filter: grayscale(100%);
+  border-radius: 5px;
+}
+.grid-container div p {
+  margin: 5px 0;
+  padding: 0;
+  text-align: center;
+  color: var(--main-gray);
+  font-style: italic;
+  font-size: smaller;
 }
 
 /*Variables*/
