@@ -306,6 +306,8 @@ footer > p {
   background: var(--main-gray);
   transition: background 0.3s ease-out;
   color: var(--main-white);
+  border: none;
+  cursor: pointer;
 }
 
 .btn-about-us > i {
@@ -473,7 +475,7 @@ footer > p {
   color: var(--main-dark-blue);
 }
 
-/*School Campus*/
+/*School Campus page*/
 .carousel {
   position: relative;
   margin: 0 auto;
@@ -556,7 +558,15 @@ footer > p {
 #carousel-15:checked ~ .control-15,
 #carousel-16:checked ~ .control-16,
 #carousel-17:checked ~ .control-17,
-#carousel-18:checked ~ .control-18 {
+#carousel-18:checked ~ .control-18,
+#carousel-19:checked ~ .control-19,
+#carousel-20:checked ~ .control-20,
+#carousel-21:checked ~ .control-21,
+#carousel-22:checked ~ .control-22,
+#carousel-23:checked ~ .control-23,
+#carousel-24:checked ~ .control-24,
+#carousel-25:checked ~ .control-25,
+#carousel-26:checked ~ .control-26 {
   display: block;
 }
 
@@ -677,6 +687,46 @@ footer > p {
   ~ .control-18
   ~ .carousel-indicators
   li:nth-child(18)
+  .carousel-bullet,
+#carousel-19:checked
+  ~ .control-19
+  ~ .carousel-indicators
+  li:nth-child(19)
+  .carousel-bullet,
+#carousel-20:checked
+  ~ .control-20
+  ~ .carousel-indicators
+  li:nth-child(20)
+  .carousel-bullet,
+#carousel-21:checked
+  ~ .control-21
+  ~ .carousel-indicators
+  li:nth-child(21)
+  .carousel-bullet,
+#carousel-22:checked
+  ~ .control-22
+  ~ .carousel-indicators
+  li:nth-child(22)
+  .carousel-bullet,
+#carousel-23:checked
+  ~ .control-23
+  ~ .carousel-indicators
+  li:nth-child(23)
+  .carousel-bullet,
+#carousel-24:checked
+  ~ .control-24
+  ~ .carousel-indicators
+  li:nth-child(24)
+  .carousel-bullet,
+#carousel-25:checked
+  ~ .control-25
+  ~ .carousel-indicators
+  li:nth-child(25)
+  .carousel-bullet,
+#carousel-26:checked
+  ~ .control-26
+  ~ .carousel-indicators
+  li:nth-child(26)
   .carousel-bullet {
   color: #428bca;
 }
@@ -695,7 +745,7 @@ footer > p {
     -1px 0px 2px rgba(255, 255, 255, 0);
 }
 
-/*Contact Form*/
+/*Contact Form page*/
 .contact-section-header {
   max-width: 640px;
   margin: 0 auto 6rem auto;
@@ -781,6 +831,7 @@ footer > p {
   transition: background 0.3s ease-out;
   color: var(--main-white);
   border: none;
+  cursor: pointer;
 }
 
 .form-btn > i {
@@ -854,7 +905,7 @@ div.button-row {
   margin-top: 2rem !important;
 }
 
-/*Our memories*/
+/*Our memories page*/
 .memories-section-header {
   max-width: 640px;
   margin: 0 auto 6rem auto;
@@ -929,6 +980,50 @@ div.button-row {
   color: var(--main-gray);
   font-style: italic;
   font-size: smaller;
+}
+
+/*About us page*/
+.about-us-section {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  padding: 8rem 2rem;
+  background: var(--main-white);
+}
+
+.about-us-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid var(--main-dark-blue);
+  color: var(--main-dark-blue);
+}
+
+.link-text {
+  color: var(--main-dark-blue);
+}
+
+.link-text:hover {
+  font-weight: 550;
+}
+
+@media (max-width: 976px) {
+  .about-us-section h2 {
+    font-size: 2.75rem;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 976px) {
+  .about-us-section {
+    padding: 8rem 2rem;
+  }
+}
+
+@media (max-width: 30.625em) {
+  .about-us-section {
+    padding: 5rem 1rem;
+  }
 }
 
 /*Variables*/
